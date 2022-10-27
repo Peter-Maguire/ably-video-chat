@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "ably": "^1.2.30",
+    "fflate": "^0.7.4"
+  }
+}
