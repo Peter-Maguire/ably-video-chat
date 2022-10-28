@@ -4,7 +4,7 @@
 import {Client} from "./Client";
 import {Contact} from "./Contact";
 import {compress, decompress} from "./Util";
-import {CallEstablishedEvent} from "./Event";
+import {CallEndedEvent, CallEstablishedEvent} from "./Event";
 import {Types} from "ably";
 
 export class Call {
@@ -209,6 +209,7 @@ export class Call {
     this.localClient.activeCall = null;
     const outgoing = this.localClient.ably.channels.get(this.remoteContact.ablyClientId)
     console.log("->sessionEnd");
+    this.localClient.dispatchEvent(new CallEndedEvent(this.remoteContact));
     return outgoing.publish("sessionEnd", {});
   }
 

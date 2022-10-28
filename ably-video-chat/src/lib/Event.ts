@@ -50,3 +50,13 @@ export class CallEstablishedEvent extends Event {
       this.call = call;
   }
 }
+
+
+export class CallEndedEvent extends Event {
+  contact: Contact;
+
+  constructor(contact: Contact){
+    super("onCallEnded");
+    this.contact = contact;
+  }
+}
