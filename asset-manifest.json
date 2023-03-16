@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ably-video-chat/static/css/main.9a6170ba.css",
-    "main.js": "/ably-video-chat/static/js/main.35d70d79.js",
+    "main.js": "/ably-video-chat/static/js/main.b97da749.js",
     "index.html": "/ably-video-chat/index.html",
     "main.9a6170ba.css.map": "/ably-video-chat/static/css/main.9a6170ba.css.map",
-    "main.35d70d79.js.map": "/ably-video-chat/static/js/main.35d70d79.js.map"
+    "main.b97da749.js.map": "/ably-video-chat/static/js/main.b97da749.js.map"
   },
   "entrypoints": [
     "static/css/main.9a6170ba.css",
-    "static/js/main.35d70d79.js"
+    "static/js/main.b97da749.js"
   ]
 }
